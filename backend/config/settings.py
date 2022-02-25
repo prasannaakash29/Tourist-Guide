@@ -31,7 +31,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 CORS_ALLOW_ALL_ORIGINS = True
-# CORS_ALLOWED_ORIGINS = ['http://localhost:3000', 'http://127.0.0.1:3000', 'https://forum-prod-frontend.herokuapp.com']
+# CORS_ALLOWED_ORIGINS = ['http://localhost:3000', 'http://127.0.0.1:3000', 'https://frontend-electric-views.herokuapp.com']
 
 # Application definition
 
@@ -45,9 +45,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.posts',
-    'apps.places',
-    'apps.categories',
+    'apps.users',
+    'apps.carts',
+    'apps.orders',
+    'apps.items',
     'cloudinary',
     'django_filters',
 ]
@@ -92,11 +93,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dcip6j63cs4795',
-        'USER': 'ymxbnibywwraoe',
+        'NAME': 'dbrh3ktbjsarqb',
+        'USER': 'gtivqdvkfyclil',
         'PORT': 5432,
-        'HOST': 'ec2-54-198-213-75.compute-1.amazonaws.com',
-        'PASSWORD': 'e243500d7f9a0de58957129a1c68798138db070449305a0a0a0481b96959baea',
+        'HOST': 'ec2-3-217-216-13.compute-1.amazonaws.com',
+        'PASSWORD': '9ae2704a7f8ca15bf9275fb15c774b494ecefa0d2c08254c1237aff94fd3104e',
     }
 }
 
